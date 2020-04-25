@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#48E4E4E4"
+    android:layout_margin="5dp"
+    android:padding="4dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Date"
+        android:textStyle="bold"
+        android:fontFamily="@font/comfortaa_bold"
+        android:id="@+id/date"
+        android:layout_marginLeft="20dp"
+        android:textSize="17sp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_below="@id/date"
+        android:layout_height="wrap_content"
+        android:id="@+id/list"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/orderee_name"
+        android:layout_below="@id/list"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="Shruti"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/orderee_add"
+        android:layout_below="@id/orderee_name"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="Ballygunge"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/orderee_phone"
+        android:layout_below="@id/orderee_add"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="908727189"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/quant_back"
+        android:layout_below="@id/orderee_phone"
+        android:layout_marginTop="3dp"
+        android:text="Pick Up"
+        android:textSize="10sp"
+        android:id="@+id/pick"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/quant_back"
+        android:layout_below="@id/orderee_phone"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="3dp"
+        android:text="Deliver"
+        android:textSize="10sp"
+        android:id="@+id/deilvered"/>
+
+
+</RelativeLayout>
